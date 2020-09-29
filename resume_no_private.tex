@@ -1,0 +1,197 @@
+\documentclass[10pt]{article}
+\usepackage{textcomp}
+%\usepackage{stmaryrd
+\usepackage{fullpage}
+\usepackage{url}
+\usepackage{hyperxmp}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
+\hypersetup{
+  colorlinks=false,
+  urlcolor=black,
+  pdfborder= 0 0 0,
+  bookmarks=false,
+  pdftitle={Petros ********-CV},
+  pdfauthor={Petros ********},
+  pdfsubject={CV},
+  pdfkeywords={Petros *********, resume, cv, math, mathematics, cs, computer science, open source, open-source, functional programming,  parallel programming, Java, Python}
+  }
+
+% todo
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\pagestyle{fancy}
+%\cfoot{\scriptsize{\thepage/\pageref{LastPage}}}
+
+\raggedbottom
+\raggedright
+\textheight=9.8in
+\setlength{\tabcolsep}{0in}
+\setlength{\oddsidemargin}{-0.8cm}
+\setlength{\evensidemargin}{-0.8cm}
+\setlength{\textwidth}{7.0in}
+\setlength{\topmargin}{-1.3cm}
+\usepackage[T1]{fontenc}
+\usepackage[sc]{mathpazo}
+%\linespread{1}
+
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{}
+
+\newenvironment{position}[4]
+{\filbreak
+\item
+  \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{#2}\\
+  \end{tabular*}
+  
+  \begin{itemize}
+    \setlength{\parskip}{-1pt}
+  } {\end{itemize}}
+\newenvironment{project}[6]
+{\item
+  \begin{tabular*}{6.5in}{p{5.6in}@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{#2}\\
+    #3 & \footnotesize{#4}\\
+    \textit{#5}\\
+    \url{#6}
+  \end{tabular*}
+}{}
+\newenvironment{region}[1]
+{{\large \textbf{#1}}
+  \begin{itemize}
+  }{\end{itemize}}
+
+\begin{document}
+
+\begin{tabular*}{6.85in}{@{\extracolsep{\fill}}lcr}
+  \textbf{\huge{Petros *********}}  &&\\
+\end{tabular*}
+
+\begin{tabular*}{6.85in}{@{\extracolsep{\fill}}lcr}
+	Athens & \texttt{(+30) 698 *** ****} & \url{http://github.com/*****} \\
+  \texttt{\today} & \texttt{\href{mailto:*****@yahoo.com}{*******@gmail.com}} & \url{uk.linkedin.com/in/*******} 
+\end{tabular*}
+\\
+\vspace{+0.3in}
+
+\begin{region}{Summary}
+
+\item
+   \textbf {A software engineer} working in the network security industry, skilled in Python and data engineering. Since Edinburgh, I developed a strong interest for machine learning and in the last couple of years for Natural Language Processing. I hold a \texttt{BSc} in Physics and a \texttt{MSc} in Computer Science from {\it The University of Edinburgh}. 
+  
+\item
+   \textbf{Interests:} NLP, Machine~Learning, Data Engineering, Functional~programming, Python, Linux. 
+
+\item
+   \textbf{Languages:} fluent English and Greek, intermediate German(C1).
+\end{region}
+
+\begin{region}{Employment}
+
+  \begin{position}{Senior Software Engineer, Data Analytics, Encode S.A. Athens}
+  {2015 - now}
+  
+  \item Development of a big data analytics engine, powered by Apache Spark, Splunk and Elasticsearch, that leverages ML and statistics to detect security threats in web traffic. Our team managed to redesign and implement the architecture for company networks of 100K users.
+  \end{position}
+  
+  \begin{position}{Python Software Developer, Web Applications, Neuropublic, Athens}
+    {2014 - 2015}
+
+  \item Back-end Python development of precision agriculture web applications, predicting crop returns according to models evaluating nutrition and environmental conditions.
+  \end{position}
+
+  \begin{position}{Intern Software Engineer, Data Acquisition, Skyscanner, Edinburgh}
+    {2012 - 2013}
+    
+  \item Successfully took over BAU main team responsibilities involving development and maintenance of API/Scrapers in Python, acquiring fare prices from airlines and communication with third parties on specification settling.
+  \end{position}
+
+  \begin{position}{Computer Lab Assistant,
+Athens Kapodistrian University, Physics Dep.}
+    {2008 - 2009}
+    
+  \item Helped in tutoring a lab class of 40 undergraduates in the basic concepts of programming, in C.
+  \end{position}
+    
+\end{region}   
+ 
+
+\begin{region}{Education}
+  \begin{position}
+    {MSc Computer Science, University of Edinburgh, Grade: 69/100}
+    {2011-2012}
+
+  \item Design and Analysis of Parallel Algorithms,
+Parallel Design Patterns,
+Cloud Computing and Big Data processing.
+  \end{position}
+
+  \begin{position}
+    {MSc Electronic Automation and Information Systems, University of Athens}
+    {2007 - 2009}
+    
+  \item  Participated the program. The program acts as a conversion course to Computer Science.
+  \end{position}
+  
+ 
+  \begin{position}
+    {BSc Physics, University of Athens, Grade: 6.7/10}
+    {2007}
+
+  \item Specialty in applications: DSPs, Telecommunications, C. Advanced Math and Physics classes.
+
+  
+%  \item Erasmus Exchange Program, University of Bonn, Germany 2004-2005 (9 months) 
+  
+  \end{position}
+  
+  \begin{position}
+    {Erasmus Exchange Student, University of Bonn, Germany}
+    {2004-2005}
+    
+  \item  Travelled and interacted with people from across Europe.
+  \end{position}
+ 
+\end{region}
+
+\begin{region}{Other}
+
+   
+\item
+    \textbf{Participated} in the Word Embeddings Challenge for the
+    Greek language, by National Bank of Greece, 2019.
+    
+    \textbf{Attended} the first Athens \texttt{NLP} Summer School, in 2019.
+    
+    \textbf{Participated} the meetings of the \texttt{NLP} Group of the \texttt{AUEB}~Informatics~Department, in 2019.
+    
+    \textbf{Covered} the \texttt{Fast.ai} Practical Deep Learning for Coders  Part~1~MOOC, in late 2018.
+    
+    \textbf{Completed} the \texttt{OCDevel}~Machine~Learning~Guide, in 2018.
+    
+    \textbf{Completed} the \texttt{UW} Programming Languages in {\it Coursera} taught by Dan Grossman, in 2013 
+
+    \textbf{Developed a library} of relational operators using the \texttt{MapReduce} programming model on multicore shared-memory systems, as a  Master Thesis for {\it The University of Edinburgh}. Graded with distinction, while the Thesis document (with the code) are posted on {\bf Github}, 2012. 
+
+    %\textbf{Wrote a text capitalizer}, use of a Naive-Bayes training method for correction of words which need to start with a capital letter, with \texttt{Hadoop MapReduce}. Implementation in Python, 2011.
+
+
+
+%\item \textbf{Development of parallelisms}: designing of parallel algorithms and use of parallel patterns, like the actor-model and bag-of-tasks. Implementations in C using \texttt{MPI}, \texttt{OpenMP }  2011-2012.
+%
+%\item \textbf{Development of a real-time voice vocoder}  on a  Digital Signal Processor board, 2007, {\it Undergrad Thesis for the University of Athens}. Implementation in C.
+ \end{region}
+ 
+
+
+%\begin{region}{Interests}
+%
+%\item Music, films, literature, travelling,  swimming.
+%\end{region}
+
+
+\end{document}
